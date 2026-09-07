@@ -1,0 +1,31 @@
+{
+  "selected_model": "logistic_regression",
+  "alternate_model": "hist_gradient_boosting",
+  "validation_selected_threshold": 0.2743542862719194,
+  "review_capacity_fraction": 0.1,
+  "n_train": 4470,
+  "n_validation": 2116,
+  "n_test": 1414,
+  "test_event_rate": 0.12376237623762376,
+  "test_metrics": {
+    "auroc": 0.7743894846074022,
+    "average_precision": 0.4149588081982452,
+    "brier": 0.09024916990887906,
+    "ece_10bin": 0.020845714910439444
+  },
+  "threshold_metrics": {
+    "threshold": 0.2743542862719194,
+    "precision": 0.5037593984962406,
+    "recall": 0.38285714285714284,
+    "review_fraction": 0.09405940594059406
+  },
+  "review_status_counts": {
+    "RANKED": 1065,
+    "NOT_ELIGIBLE": 253,
+    "DEFER_DATA_QUALITY": 45,
+    "DEFER_MODEL_DISAGREEMENT": 32,
+    "DEFER_THRESHOLD_UNCERTAINTY": 19
+  },
+  "priority_review_cases": 51,
+  "deferred_cases": 96
+}

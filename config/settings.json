@@ -1,0 +1,19 @@
+{
+  "random_seed": 42,
+  "train_end": "2024-12-31",
+  "validation_end": "2025-12-31",
+  "review_capacity_fraction": 0.10,
+  "model_disagreement_threshold": 0.20,
+  "threshold_uncertainty_margin": 0.02,
+  "utility": {
+    "true_positive_benefit": 8.0,
+    "false_positive_cost": 1.0,
+    "false_negative_cost": 3.0
+  },
+  "critical_features": [
+    "discharge_opioid_mme",
+    "prior_overdose",
+    "oud_history",
+    "benzodiazepine_active"
+  ]
+}

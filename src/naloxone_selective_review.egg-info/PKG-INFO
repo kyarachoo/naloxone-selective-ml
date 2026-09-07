@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: naloxone-selective-review
+Version: 0.1.0
+Summary: Privacy-safe selective ML review support for naloxone-at-discharge prioritization
+Requires-Python: >=3.11
+Requires-Dist: numpy>=2.0
+Requires-Dist: pandas>=2.0
+Requires-Dist: scikit-learn>=1.5
+Requires-Dist: joblib>=1.3

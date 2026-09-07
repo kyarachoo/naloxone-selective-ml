@@ -1,0 +1,4 @@
+capacity_fraction,threshold,reviewed,true_positives,false_positives,false_negatives,utility
+0.05,0.4275884462197557,71,44,27,131,-68.0
+0.1,0.26134994444190135,142,68,74,107,149.0
+0.2,0.15995162521640374,283,95,188,80,332.0

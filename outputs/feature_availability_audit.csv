@@ -1,0 +1,19 @@
+feature,kind,available_by_discharge,include_in_model,reason,leakage_risk,model_feature_ok
+age,numeric,True,True,Known before discharge,False,True
+sex,categorical,True,True,Known before discharge,False,True
+site_id,categorical,True,True,Known before discharge,False,True
+procedure_group,categorical,True,True,Known before discharge,False,True
+comorbidity_index,numeric,True,True,Known before discharge,False,True
+prior_overdose,binary,True,True,Known historical risk factor,False,True
+oud_history,binary,True,True,Known historical risk factor,False,True
+ed_visits_180d,numeric,True,True,Known historical utilization,False,True
+inpatient_days_365d,numeric,True,True,Known historical utilization,False,True
+discharge_opioid_mme,numeric,True,True,Known at discharge,False,True
+benzodiazepine_active,binary,True,True,Known medication status at discharge,False,True
+chronic_opioid_therapy,binary,True,True,Known medication history,False,True
+pain_score_discharge,numeric,True,True,Available by discharge,False,True
+p1_unresolved_quality_flag,binary,True,False,Used for deferral rather than model fitting,False,False
+naloxone_at_discharge,binary,True,False,Current treatment/process variable; excluded to avoid predicting existing prescribing behavior,False,False
+opioid_event_30d,binary,False,False,Post-discharge outcome and prediction target,False,False
+opioid_event_30d_date,date,False,False,Post-discharge outcome timing; leakage if used as feature,True,False
+post_discharge_refill_count_30d,numeric,False,False,Post-discharge variable; leakage if used as feature,True,False

@@ -1,0 +1,2 @@
+[console_scripts]
+p2-review = clinical_review.pipeline:main
