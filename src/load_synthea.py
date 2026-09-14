@@ -20,3 +20,28 @@ print(conditions.columns.tolist())
 print('\nMEDICATIONS')
 print(medications.shape)
 print(medications.columns.tolist())
+
+print('\nENCOUNTER CLASSES')
+print(encounters['ENCOUNTERCLASS'].value_counts())
+
+print('\nPOSSIBLE OPIOID-RELATED CONDITIONS')
+opioid_conditions = conditions[
+    conditions['DESCRIPTION'].str.contains(
+        'opioid|overdose|dependence|poison',
+        case=False,
+        na=False
+    )
+]
+
+print(opioid_conditions[['START', 'PATIENT', 'ENCOUNTER', 'CODE', 'DESCRIPTION']])
+
+print('\nPOSSIBLE OPIOID-RELATED MEDICATIONS')
+opioid_meds = medications[
+    medications['DESCRIPTION'].str.contains(
+        'naloxone|buprenorphine|methadone|oxycodone|hydrocodone|morphine|fentanyl|tramadol|codeine',
+        case=False,
+        na=False
+    )
+]
+
+print(opioid_meds[['START', 'PATIENT', 'ENCOUNTER', 'CODE', 'DESCRIPTION']])
