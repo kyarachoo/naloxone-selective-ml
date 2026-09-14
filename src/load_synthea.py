@@ -45,3 +45,28 @@ opioid_meds = medications[
 ]
 
 print(opioid_meds[['START', 'PATIENT', 'ENCOUNTER', 'CODE', 'DESCRIPTION']])
+
+print('\nOPIOID MEDICATIONS PER PATIENT')
+print(
+    opioid_meds.groupby('PATIENT')
+    .size()
+    .sort_values(ascending=False)
+)
+
+print('\nOVERDOSES PER PATIENT')
+print(
+    opioid_conditions.groupby('PATIENT')
+    .size()
+    .sort_values(ascending=False)
+)
+
+print('\nNALOXONE')
+naloxone = medications[
+    medications['DESCRIPTION'].str.contains(
+        'naloxone',
+        case=False,
+        na=False
+    )
+]
+
+print(naloxone[['START', 'PATIENT', 'ENCOUNTER', 'CODE', 'DESCRIPTION']])
