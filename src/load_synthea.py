@@ -1,3 +1,5 @@
+import pandas as pd
+
 patients = pd.read_csv('data/synthea/patients.csv')
 encounters = pd.read_csv('data/synthea/encounters.csv')
 conditions = pd.read_csv('data/synthea/conditions.csv')
