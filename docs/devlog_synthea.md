@@ -1,3 +1,4 @@
+## Logging src/load_synthea.py
 # add src/load_synthea.py
 - Sep 14, 2026
 Load and inspect core Synthea tables.
